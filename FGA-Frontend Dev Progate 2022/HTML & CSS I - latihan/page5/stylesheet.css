@@ -1,0 +1,104 @@
+/* Reset CSS (JANGAN DIHAPUS) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next";
+}
+
+li {
+  list-style: none;
+}
+
+/* Ketik code Anda dibawah */
+.header {
+  background-color: #26d0c9;
+  height: 90px;
+  color: white;
+}
+.header-logo {
+  float: left;
+  padding: 20px 40px;
+}
+.header-list ul li {
+  float: left;
+  padding: 33px 20px;
+}
+
+.main {
+  padding: 100px 80px;
+}
+.main .container h1 {
+  font-size: 140px;
+}
+.main .container h1 span {
+  color: red;
+}
+.main .container h2 {
+  font-size: 60px;
+  margin-bottom: 100px;
+}
+
+.contents h3 {
+  border-bottom: 2px solid #dee7ec;
+  margin-bottom: 45px;
+  padding-bottom: 20px;
+  font-size: 28px;
+}
+.content-item {
+  float: left;
+  margin-right: 35px;
+}
+.content-item p {
+  margin: 40px 0px 140px;
+  font-size: 25px;
+}
+
+.form h3 {
+  /*position: relative;*/
+  
+}
+.section {
+  border-bottom: 2px solid #dee7ec;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  font-size: 28px;
+  /*position: absolute;*/
+  /*top: 500;*/
+  padding-right: 500px;
+}
+
+input, textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #dee7ec;
+  padding: 20px;
+}
+.submit {
+  color: #889eab;
+  background-color: #dee7ec;
+  font-size: 18px;
+}
+
+
+.footer {
+  background-color: #2f5167;
+  color: #fff;
+  padding: 50px 50px 160px 50px;
+}
+.footer-logo {
+  font-size: 30px;
+  float: left;
+}
+.footer-list {
+  float: right;
+}
+.footer-list li{
+  margin-bottom: 18px;
+}
