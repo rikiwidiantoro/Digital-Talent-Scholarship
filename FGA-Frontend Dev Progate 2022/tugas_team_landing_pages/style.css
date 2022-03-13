@@ -27,6 +27,7 @@ div {
 .navbar-logo {
     width: 20%;
     text-align: left;
+    margin-top: -5px;
 }
 .navbar-menu {
     width: 60%;
@@ -38,7 +39,7 @@ div {
 .navbar-login {
     width: 20%;
     text-align: right;
-    padding: 18px 0px;
+    padding: 14px 0px;
 }
 .btn {
     background-color: rgb(65, 177, 37);
@@ -54,6 +55,7 @@ div {
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
+    height: 500px;
 }
 .header-tulisan {
     width: 40%;
@@ -68,6 +70,34 @@ div {
     font-size: 20px;
     text-align: justify;
 }
+.header-tulisan h2 {
+    font-weight: 200;
+}
 .header-gambar {
     width: 60%;
 }
+
+
+/* main */
+.main {
+    height: 450px;
+}
+.main .container {
+    display: inline-block;
+    margin: 0px 100px;
+}
+.main-judul {
+    margin-top: 50px;
+}
+.main-poin {
+    display: flex;
+}
+.main-card {
+    width: 50%;
+}
+/* .main-card .satu {
+    margin-right: 50px;
+}
+.main-card .dua {
+    margin-left: 50px;
+} */
