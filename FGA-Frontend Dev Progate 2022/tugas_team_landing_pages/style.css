@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+div {
+    /* border: 1px solid black; */
+}
+.container {
+    display: flex;
+    margin: 0px 100px;
+}
+
+
+/* navbar */
+.navbar {
+    /* display: flex; */
+    background-color: rgb(67, 127, 155);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+.navbar-logo {
+    width: 20%;
+    text-align: left;
+}
+.navbar-menu {
+    width: 60%;
+}
+.navbar-menu li {
+    display: inline;
+    margin: 0px 50px;
+}
+.navbar-login {
+    width: 20%;
+    text-align: right;
+    padding: 18px 0px;
+}
+.btn {
+    background-color: rgb(65, 177, 37);
+    padding: 5px 18px;
+    border-radius: 5px;
+}
+
+
+/* header */
+.header {
+    /* display: flex; */
+    background-color: rgb(67, 127, 155);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header-tulisan {
+    width: 40%;
+    padding: 20px 40px 20px 0px;
+}
+.header-tulisan h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+.header-tulisan p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.header-gambar {
+    width: 60%;
+}
