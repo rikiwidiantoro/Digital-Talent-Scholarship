@@ -95,9 +95,25 @@ div {
 .main-card {
     width: 50%;
 }
-/* .main-card .satu {
-    margin-right: 50px;
+
+
+
+/* footer */
+.footer {
+    background-color: rgb(67, 127, 155);
+    color: white;
+    height: 250px;
+    padding: 30px 0px;
 }
-.main-card .dua {
-    margin-left: 50px;
-} */
+.footer-logo {
+    width: 25%;
+}
+.footer-alamat {
+    width: 40%;
+}
+.footer-tentang {
+    width: 20%;
+}
+.footer-support {
+    width: 20%;
+}
