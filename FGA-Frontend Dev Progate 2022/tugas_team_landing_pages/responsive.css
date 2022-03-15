@@ -6,12 +6,37 @@
 /* tablet */
 /* 671 - 1000 */
 @media (max-width: 1000px) {
-
+    /* navbar */
+    /* .navbar .navbar-logo h2 {
+        font-size: 25px;
+    } */
+    .navbar-logo {
+        width: 15%;
+    }
+    .navbar-menu {
+        width: 70%;
+    }
+    .navbar-menu ul li {
+        margin: 0px 15px;
+    }
+    .navbar-login {
+        width: 15%;
+    }
+    /* header */
+    /* main */
+    /* lokasi */
+    /* main2 */
+    /* footer */
 }
 
 
 /* smartphone */
 /* < 671 */
 @media (max-width: 670px) {
-    
+    /* navbar */
+    /* header */
+    /* main */
+    /* lokasi */
+    /* main2 */
+    /* footer */
 }
