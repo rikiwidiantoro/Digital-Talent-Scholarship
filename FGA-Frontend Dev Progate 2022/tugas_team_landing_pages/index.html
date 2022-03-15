@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vakesine</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
 </head>
@@ -22,13 +23,13 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Pengetahuan</a>
+                        <a href="#main">Pengetahuan</a>
                     </li>
                     <li>
-                        <a href="#">Statistik</a>
+                        <a href="#lokasi">Lokasi</a>
                     </li>
                     <li>
-                        <a href="#">Vaksin</a>
+                        <a href="#kontak">Kontak</a>
                     </li>
                 </ul>
             </div>
@@ -46,10 +47,15 @@
             <div class="header-tulisan">
                 <h1>Lindungi Diri Dan Sekitar Dengan Vaksinasi COVID-19</h1>
                 <p>Ayo berpartisipasi dalam program vaksinasi COVID-19 ini untuk melindungi Anda dan keluarga Anda dari COVID-19. Jalankan 3M, menggunakan masker, menjaga jarak, dan mencuci tangan untuk kebaikan kita semuanya.</p>
-                <h2>Call Center <u>021-2345 6789</u></h2>
+                <div class="logo-instansi">
+                    <img src="gambar/kemenkes.png" alt="" width="130">
+                    <img src="gambar/kaef.png" alt="" width="130">
+                    <img src="gambar/astrazeneca.png" alt="" width="140">
+                </div>
+                <h2 id="main">Call Center <u>021-2345 6789</u></h2>
             </div>
             <div class="header-gambar">
-                <img src="gambar/gambar1.png" alt="" width="550">
+                <img src="gambar/gambar1.png" alt="" width="590">
             </div>
         </div>
     </div>
@@ -92,7 +98,7 @@
                         <i class="fa-solid fa-users"></i>
                         <div class="tulis">
                             <h3>Menciptakan kekebalan kelompok</h3>
-                            <p>Vaksinasi COVID-19 juga bermanfaat untuk menciptakan kekebalan kelompok atau herd immunity.</p>
+                            <p id="lokasi">Vaksinasi COVID-19 juga bermanfaat untuk menciptakan kekebalan kelompok atau herd immunity.</p>
                         </div>
                     </div>
                 </div>
@@ -106,14 +112,14 @@
     <div class="lokasi">
         <div class="container">
             <div class="lokasi-cari">
-                <h2>Cari Lokasi Vaksinasi di</h2>
+                <h1>Cari Lokasi Vaksinasi</h2>
                 <div class="input">
-                    <input type="text" placeholder="     Cari lokasi Anda disini..."><i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" placeholder="     Cari lokasi vaksinasi terdekat disini..."><i class="fa fa-search" aria-hidden="true"></i>
                 </div>
                 <!-- <input type="submit" value="Cari"> -->
             </div>
             <div class="lokasi-map">
-                <iframe width="450" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=ponorogo%20jawatimur%20indonesia&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <iframe width="450" height="270" id="gmap_canvas" src="https://maps.google.com/maps?q=ponorogo%20jawatimur%20indonesia&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
         </div>
     </div>
@@ -145,11 +151,11 @@
             <div class="footer-logo">
                 <h1><i class="fa-solid fa-crutch"></i> Vakesine</h1>
                 <br>
-                <h2>Developer</h2>
+                <h3>Developer</h3>
                 <p>Riki Widiantoro | <a href="https://github.com/rikiwidiantoro" target="_blank"><i class="fab fa-github"></i> rikiwidiantoro</a></p>
             </div>
             <div class="footer-alamat">
-                <h2>Kontak Kami</h2>
+                <h2 id="kontak">Kontak Kami</h2>
                 <div class="sosmed">
                     <a href="#"><i class="fas fa-phone"></i> 021-2345 6789</a>
                     <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> vakesine@gmail.com</a>
