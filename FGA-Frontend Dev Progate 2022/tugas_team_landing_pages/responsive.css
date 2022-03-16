@@ -1,42 +1,632 @@
-/* > 1000 */
-
-
-
-
-/* tablet */
-/* 671 - 1000 */
-@media (max-width: 1000px) {
+/* > 1400 */
+@media (min-width: 1401px) {
+    .container {
+        padding: 0px 100px;
+    }
     /* navbar */
-    /* .navbar .navbar-logo h2 {
-        font-size: 25px;
-    } */
     .navbar-logo {
-        width: 15%;
+        width: 20%;
+        text-align: left;
+        margin-top: -5px;
+    }
+    .navbar-menu {
+        width: 60%;
+    }
+    .navbar-menu li {
+        display: inline;
+        margin: 0px 50px;
+        font-size: 17px;
+    }
+    .navbar-login {
+        width: 20%;
+        text-align: right;
+        padding: 14px 0px;
+    }
+    .navbar-login .fa-bars {
+        display: none;
+    }
+
+
+    /* header */
+    .header-gambar img {
+        width: 590px;
+    }
+    .header-tulisan {
+        width: 45%;
+        padding: 20px 40px 20px 0px;
+        text-align: justify;
+    }
+    .header-tulisan h1 {
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .header-tulisan .logo-instansi img {
+        width: 140px;
+        margin: -30px 20px;
+    }
+    .header-tulisan p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    .header-gambar {
+        width: 55%;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+
+    /* main */
+    .main {
+        height: 550px;
+    }
+    .main-judul h1 {
+        font-weight: 700;
+        font-size: 35px;
+        text-align: left;
+    }
+    .main-judul p {
+        text-align: left;
+    }
+    .main-poin {
+        display: flex;
+    }
+    .main-card {
+        width: 50%;
+        text-align: justify;
+    }
+    .main-poin .satu {
+        padding-right: 20px;
+    }
+    .main-poin .dua {
+        padding-left: 20px;
+    }
+    .main-isi i {
+        width: 8%;
+        margin-top: 18px;
+        font-size: 1.5em;
+    }
+
+
+    /* lokasi */
+    .lokasi .lokasi-cari input {
+        width: 780px;
+        height: 45px;
+        border-radius: 15px;
+        border: 0px;
+    }
+    .lokasi .lokasi-map iframe {
+        width: 450px;
+        height: 270px;
+    }
+
+
+    /* main2 */
+    .main2 {
+        height: 400px;
+    }
+    .main2-gambar {
+        width: 45%;
+        margin-top: -25px;
+    }
+    .main2-gambar img {
+        width: 450px;
+        margin: 0px 50px;
+    }
+    .main2-tulisan {
+        width: 55%;
+        margin-top: 25px;
+    }
+    .main2-tulisan h1 {
+        font-size: 33px;
+        font-weight: 700;
+    }
+    .main2-tulisan li {
+        font-size: 21px;
+        line-height: 40px;
+    }
+
+
+    /* footer */
+    .footer {
+        height: 230px;
+    }
+    .footer-logo {
+        width: 35%;
+        margin-top: -20px;
+    }
+    .footer-alamat {
+        width: 30%;
+    }
+    .footer-tentang {
+        width: 20%;
+    }
+    .footer-support {
+        width: 20%;
+    }
+}
+
+
+
+
+/* 1000 - 1400 */
+@media (max-width: 1400px) {
+    .container {
+        padding: 0px 100px;
+    }
+    /* navbar */
+    .navbar-logo {
+        width: 20%;
+        text-align: left;
+        margin-top: -5px;
     }
     .navbar-menu {
         width: 70%;
     }
     .navbar-menu ul li {
-        margin: 0px 15px;
+        display: inline;
+        margin: 0px 31px;
+        font-size: 15px;
     }
     .navbar-login {
-        width: 15%;
+        width: 10%;
+        text-align: right;
+        padding: 14px 0px;
     }
+    .navbar-login .fa-bars {
+        display: none;
+    }
+
     /* header */
+    .header-tulisan {
+        text-align: justify;
+    }
+    .header-tulisan h1 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .header-tulisan .logo-instansi img {
+        width: 80px;
+        margin: -10px 5px;
+    }
+    .header-tulisan p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    .header-gambar img {
+        width: 500px;
+    }
+
     /* main */
+    .main {
+        height: 580px;
+    }
+    .main-judul h1 {
+        font-weight: 700;
+        font-size: 35px;
+        text-align: left;
+    }
+    .main-judul p {
+        text-align: left;
+    }
+    .main-poin {
+        display: flex;
+    }
+    .main-card {
+        width: 50%;
+        text-align: justify;
+    }
+    .main-poin .satu {
+        padding-right: 20px;
+    }
+    .main-poin .dua {
+        padding-left: 20px;
+    }
+    .main-isi i {
+        width: 8%;
+        margin-top: 18px;
+        font-size: 1.5em;
+    }
+
+
     /* lokasi */
+    .lokasi .lokasi-cari input {
+        width: 500px;
+        height: 45px;
+        border-radius: 15px;
+        border: 0px;
+    }
+    .lokasi .lokasi-map iframe {
+        float: right;
+        width: 350px;
+        height: 270px;
+    }
+
+
     /* main2 */
+    .main2-gambar img {
+        width: 320px;
+        margin: 30px 50px;
+    }
+    .main2-tulisan h1 {
+        font-size: 33px;
+        font-weight: 700;
+    }
+    .main2-tulisan li {
+        font-size: 21px;
+        line-height: 40px;
+    }
+
+
     /* footer */
+    .footer-logo {
+        width: 35%;
+        margin-top: -20px;
+    }
+    .footer-alamat {
+        width: 30%;
+    }
+    .footer-tentang {
+        width: 20%;
+    }
+    .footer-support {
+        width: 20%;
+    }
+}
+
+
+
+/* tablet */
+/* 671 - 1000 */
+.container {
+    padding: 0px 70px;
+}
+@media (max-width: 1000px) {
+    /* navbar */
+    .navbar .navbar-logo h2 {
+        font-size: 17px;
+    }
+    .navbar-logo {
+        width: 20%;
+    }
+    .navbar-menu {
+        width: 70%;
+    }
+    .navbar-menu ul li {
+        margin: 0px 10px;
+        font-size: 14px;
+    }
+    .navbar-login {
+        width: 10%;
+    }
+    .navbar-login a {
+        font-size: 13px;
+    }
+    .navbar-login .fa-bars {
+        display: none;
+    }
+
+
+    /* header */
+    /* .header .container {
+        display: block;
+    } */
+    .header-tulisan {
+        width: 100%;
+        padding: 20px 10px 10px 0px;
+        text-align: justify;
+    }
+    .header-tulisan h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .header-tulisan .logo-instansi img {
+        width: 140px;
+        margin: -30px 5px;
+    }
+    .header-tulisan p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+    .header-gambar {
+        width: 200px;
+        display: none;
+    }
+    /* .header-gambar img {
+        width: 400px;
+    } */
+
+
+
+    /* main */
+    .main {
+        height: 900px;
+    }
+    .main-judul h1 {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+    .main-judul p {
+        /* font-size: 16px; */
+        text-align: center;
+    }
+    .main-poin {
+        display: block;
+    }
+    .main-card {
+        width: 100%;
+        text-align: justify;
+    }
+    .main-poin .satu {
+        padding-right: 0px;
+    }
+    .main-poin .dua {
+        padding-left: 0px;
+    }
+    .main-isi i {
+        width: 8%;
+        margin-top: 18px;
+        font-size: 1.5em;
+    }
+
+
+    /* lokasi */
+    .lokasi {
+        height: 450px;
+    }
+    .lokasi .container {
+        display: block;
+    }
+    .lokasi .lokasi-cari {
+        padding-top: 10px;
+        width: 100%;
+        margin: 0px auto 15px;
+    }
+    .lokasi .lokasi-map {
+        width: 100%;
+    }
+    .lokasi .lokasi-map iframe {
+        float: none;
+        display: block;
+        margin: 0px auto;
+    }
+    .lokasi .lokasi-cari input {
+        width: 450px;
+        height: 45px;
+        border-radius: 15px;
+        border: 0px;
+    }
+
+    /* main2 */
+    .main2 .container {
+        display: block;
+    }
+    .main2-gambar {
+        width: 100%;
+        margin-top: -30px;
+    }
+    .main2-tulisan {
+        width: 100%;
+    }
+    .main2-gambar img {
+        width: 400px;
+        display: block;
+        margin: 15px auto 0px;
+    }
+    .main2-tulisan h1 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .main2-tulisan li {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+
+    /* footer */
+    .footer {
+        height: 230px;
+    }
+    .footer .container {
+        display: block;
+    }
+    .footer-logo {
+        width: 50%;
+        margin-top: -20px;
+        float: left;
+    }
+    .footer-alamat {
+        width: 45%;
+        float: right;
+    }
+    .footer-tentang {
+        display: none;
+    }
+    .footer-support {
+        display: none;
+    }
 }
 
 
 /* smartphone */
 /* < 671 */
 @media (max-width: 670px) {
+    .container {
+        padding: 0px 40px;
+    }
     /* navbar */
+    .navbar .navbar-logo h2 {
+        font-size: 20px;
+    }
+    .navbar-logo {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-menu {
+        /* width: 70%; */
+        display: none;
+    }
+    .navbar-menu ul li {
+        margin: 0px 15px;
+        font-size: 13px;
+    }
+    .navbar-login .btn {
+        width: 30%;
+        display: none;
+    }
+    .navbar-login a {
+        font-size: 12px;
+    }
+    .navbar .navbar-login .fa-bars {
+        display: block;
+    }
+
     /* header */
+    /* .header-tulisan {
+        width: 100%;
+        padding: 20px 10px 10px 0px;
+        text-align: justify;
+    } */
+    .header-tulisan h1 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .header-tulisan .logo-instansi img {
+        width: 70px;
+        margin: -10px 5px;
+    }
+    .header-tulisan h2 {
+        font-size: 18px;
+    }
+    .header-tulisan p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 17px;
+    }
+    .header-gambar {
+        width: 200px;
+        display: none;
+    }
+
     /* main */
+    .main {
+        height: 1050px;
+    }
+    .main-card {
+        width: 100%;
+        text-align: justify;
+    }
+    .main-isi i {
+        width: 8%;
+        margin-top: 18px;
+        font-size: 1.3em;
+    }
+
+    
     /* lokasi */
+    .lokasi .lokasi-cari {
+        padding-top: 10px;
+    }
+    .lokasi .lokasi-cari input {
+        width: 270px;
+        height: 45px;
+        border-radius: 15px;
+        border: 0px;
+    }
+    .lokasi .lokasi-map iframe {
+        width: 300px;
+        height: 250px;
+    }
+
+
     /* main2 */
+    .main2-gambar img {
+        width: 250px;
+    }
+    .main2-tulisan h1 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .main2-tulisan li {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+
     /* footer */
+    .footer {
+        height: 350px;
+    }
+    .footer-logo {
+        width: 100%;
+        margin-top: -20px;
+    }
+    .footer-alamat {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .header-tulisan h1 {
+        margin-top: -20px;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .header-tulisan .logo-instansi img {
+        width: 50px;
+        margin: -10px 5px;
+    }
+    .header-tulisan h2 {
+        font-size: 16px;
+    }
+    .header-tulisan p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+    }
+
+
+    .main-judul h1 {
+        font-size: 25px;
+    }
+    .main-judul p {
+        font-size: 16px;
+    }
+    .main-isi .tulis h3 {
+        font-size: 18px;
+    }
+    .main-isi .tulis p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .main-isi i {
+        margin: 18px 5px 0px -10px;
+        font-size: 1.1em;
+    }
+
+
+    .lokasi .lokasi-cari input {
+        width: 230px;
+        height: 40px;
+        border-radius: 12px;
+        border: 0px;
+    }
+    .lokasi .lokasi-map iframe {
+        width: 220px;
+        height: 220px;
+    }
+
+
+
+    .main2-gambar img {
+        width: 220px;
+    }
+    .main2-tulisan h1 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .main2-tulisan li {
+        font-size: 17px;
+        line-height: 30px;
+    }
 }

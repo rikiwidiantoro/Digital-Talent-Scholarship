@@ -2,13 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    /* width: 100%; */
+    /* position: relative; */
 }
 /* div {
     border: 1px solid black;
 } */
 .container {
     display: flex;
-    margin: 0px 100px;
 }
 
 
@@ -22,28 +23,30 @@ body {
     width: 100%;
     position: fixed;
     z-index: 10;
+    /* position: absolute; */
 }
 .navbar a {
     text-decoration: none;
     color: white;
 }
-.navbar-logo {
+/* .navbar-logo {
     width: 20%;
     text-align: left;
     margin-top: -5px;
-}
-.navbar-menu {
+} */
+/* .navbar-menu {
     width: 60%;
-}
-.navbar-menu li {
+} */
+/* .navbar-menu li {
     display: inline;
     margin: 0px 50px;
-}
-.navbar-login {
+    font-size: 17px;
+} */
+/* .navbar-login {
     width: 20%;
     text-align: right;
     padding: 14px 0px;
-}
+} */
 .btn {
     background-color: rgb(65, 177, 37);
     padding: 7px 18px;
@@ -65,79 +68,76 @@ body {
     padding-top: 100px;
     padding-bottom: 30px;
     height: 520px;
+    width: 100%;
 }
-.header-tulisan {
-    width: 40%;
+/* .header-tulisan {
+    width: 45%;
     padding: 20px 40px 20px 0px;
-}
-.header-tulisan h1 {
+    text-align: justify;
+} */
+/* .header-tulisan h1 {
     font-size: 50px;
     font-weight: 500;
-}
-.header-tulisan p {
+} */
+/* .header-tulisan p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    text-align: justify;
-}
+} */
 .header-tulisan h2 {
     font-weight: 200;
 }
-.header-tulisan .logo-instansi img {
-    margin-right: 30px;
-    margin-top: -30px;
-    margin-bottom: -30px;
-    width: 130px;
-}
-.header-gambar {
-    width: 60%;
+/* .header-tulisan .logo-instansi img {
+    width: 140px;
+    margin: -30px 20px;
+} */
+/* .header-gambar {
+    width: 55%;
     text-align: center;
     margin-top: -20px;
-}
-.header-gambar img {
-    width: 590px;
-}
+} */
+
 
 
 /* main */
-.main {
+/* .main {
     height: 550px;
-}
+} */
 .main p {
     font-size: 18px;
     line-height: 30px;
 }
 .main .container {
     display: inline-block;
-    margin: 0px 100px;
+    /* margin: 0px 100px; */
 }
 .main-judul {
     margin-top: 50px;
 }
-.main-judul h1 {
+/* .main-judul h1 {
     font-weight: 700;
     font-size: 35px;
-}
-.main-poin {
+} */
+/* .main-poin {
     display: flex;
-}
-.main-poin .satu {
+} */
+/* .main-poin .satu {
     padding-right: 20px;
 }
 .main-poin .dua {
     padding-left: 20px;
-}
-.main-card {
+} */
+/* .main-card {
     width: 50%;
     text-align: justify;
-}
+} */
 .main-isi {
     display: flex;
 }
-.main-isi i {
+/* .main-isi i {
     width: 8%;
     margin-top: 18px;
     font-size: 1.5em;
-}
+} */
 .main-isi .tulis {
     width: 92%;
 }
@@ -171,42 +171,47 @@ body {
     margin-right: -2px;
     margin-top: -2px;
 }
-.lokasi .lokasi-cari input {
+/* .lokasi .lokasi-cari input {
     width: 800px;
     height: 45px;
     border-radius: 15px;
     border: 0px;
-}
+} */
 .lokasi .lokasi-map {
     width: 35%;
 }
+/* .lokasi .lokasi-map iframe {
+    width: 450px;
+    height: 270px;
+} */
 
 
 
 
 /* main2 */
-.main2 {
+/* .main2 {
     height: 400px;
-}
-.main2-gambar {
-    width: 40%;
+} */
+/* .main2-gambar {
+    width: 45%;
     margin-top: -25px;
-}
-.main2-gambar img {
+} */
+/* .main2-gambar img {
     width: 450px;
-}
-.main2-tulisan {
-    width: 60%;
-    margin-top: 15px;
-}
+    margin: 0px 50px;
+} */
+/* .main2-tulisan {
+    width: 55%;
+    margin-top: 25px;
+} */
 .main2-tulisan h1 {
-    font-size: 35px;
+    /* font-size: 33px; */
     font-weight: 700;
 }
-.main2-tulisan li {
+/* .main2-tulisan li {
     font-size: 21px;
     line-height: 40px;
-}
+} */
 
 
 
@@ -214,20 +219,25 @@ body {
 .footer {
     background-color: rgb(67, 127, 155);
     color: white;
-    height: 250px;
+    /* height: 230px; */
     padding: 30px 0px;
+    width: 100%;
 }
-.footer-logo {
+/* .footer-logo {
     width: 35%;
     margin-top: -20px;
-}
+} */
 .footer-logo h1 {
     font-size: 40px;
+    margin-bottom: 15px;
+}
+.footer-logo h3 {
+    margin-bottom: -5px;
 }
 .footer-logo p {
     font-size: 15px;
 }
-.footer-alamat {
+/* .footer-alamat {
     width: 30%;
 }
 .footer-tentang {
@@ -235,7 +245,7 @@ body {
 }
 .footer-support {
     width: 20%;
-}
+} */
 .footer p a {
     color: white;
     text-decoration: none;
