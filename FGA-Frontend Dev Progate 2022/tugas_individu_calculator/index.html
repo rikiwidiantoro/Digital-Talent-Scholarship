@@ -10,55 +10,164 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- css -->
     <style>
-        .layout-kalkulator, .tombol-row, .tombolAngka {
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+        }
+        .layout-kalkulator, .tombol-row, .tombol, .container {
             border: 1px solid black;
         }
+        .layout-kalkulator {
+            width: 400px;
+            height: 480px;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .layout-kalkulator .layar {
+            height: 85px;
+            font-size: 50px;
+            padding-top: 15px;
+        }
+        .tombol-row {
+            display: flex;
+        }
+        .tombol {
+            padding: 30px;
+            width: 25%;
+        }
+        .samadengan {
+            width: 50%;
+        }
+        .tombol:hover {
+            background-color: brown;
+        }
+
+
+        .footer {
+            display: flex;
+        }
+
+
     </style>
 </head>
 <body>
     
-
     <!-- header -->
         <div class="header">
             <h1>Tugas Individu Calculator</h1>
         </div>
     <!-- header -->
 
-    <!-- layout kalkulator -->
-    <div class="layout-kalkulator">
-        <div class="layar">
 
+    <!-- isi -->
+    <div class="container">
+        <!-- layout kalkulator -->
+        <div class="layout-kalkulator">
+            <div class="layar">
+                <span class="hasil"></span>
+            </div>
+            <div class="tombol-row">
+                <div class="tombol">7</div>
+                <div class="tombol">8</div>
+                <div class="tombol">9</div>
+                <div class="tombol operator">+/-</div>
+            </div>
+            <div class="tombol-row">
+                <div class="tombol">4</div>
+                <div class="tombol">5</div>
+                <div class="tombol">6</div>
+                <div class="tombol operator">+</div>
+            </div>
+            <div class="tombol-row">
+                <div class="tombol">1</div>
+                <div class="tombol">2</div>
+                <div class="tombol">3</div>
+                <div class="tombol operator">-</div>
+            </div>
+            <div class="tombol-row">
+                <div class="tombol reset">C</div>
+                <div class="tombol">0</div>
+                <div class="tombol samadengan">=</div>
+            </div>
         </div>
-        <div class="tombol-row">
-            <div class="tombol">7</div>
-            <div class="tombol">8</div>
-            <div class="tombol">9</div>
-            <div class="tombol plusminus">+/-</div>
+        <!-- layout kalkulator -->
+    
+        <!-- tabel history -->
+        <table class="history" border="1">
+            <thead>
+                <tr>
+                    <th>Angka pertama</th>
+                    <th>Aksi</th>
+                    <th>Angka kedua</th>
+                    <th>Jumlah</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+        </table>
+        <!-- tabel history -->
+    </div>
+    <!-- isi -->
+
+<br><br>
+    <!-- footer -->
+    <div class="footer">
+        <div class="judul">
+            <h3>Tugas Individu Calculator</h3>
+            <h5>Riki Widiantoro</h5>
+            <h5>Ponorogo, Jawa Timur, Indonesia</h5>
         </div>
-        <div class="tombol-row">
-            <div class="tombol">4</div>
-            <div class="tombol">5</div>
-            <div class="tombol">6</div>
-            <div class="tombol plus">+</div>
-        </div>
-        <div class="tombol-row">
-            <div class="tombol">1</div>
-            <div class="tombol">2</div>
-            <div class="tombol">3</div>
-            <div class="tombol minus">-</div>
-        </div>
-        <div class="tombol-row">
-            <div class="reset">C</div>
-            <div class="tombol">0</div>
-            <div class="tombol samadengan">=</div>
+        <div class="sosmed">
+            <h3>Sosial Media</h3>
+            <p>github</p>
+            <p>lindkedin</p>
+            <p>instagram</p>
         </div>
     </div>
-    <!-- layout kalkulator -->
+    <!-- footer -->
 
 
-    <!-- tabel history -->
-    <!-- tabel history -->
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- javascript -->
+    <script>
+        $(document).ready(function() {
+            // membuat variabel
+            const kalkulator = {
+                angka: '0',
+                operator: null,
+                angkaPertama: null,
+                angkaKedua: false
+            };
+
+            function updateLayar() {
+                document.querySelector(".hasil").innerText = kalkulator.angka;
+            }
+
+            function hapusLayar() {
+                kalkulator.angka = '0';
+                kalkulator.operator = null;
+                kalkulator.angkaPertama = null;
+                kalkulator.angkaKedua = false;
+            }
+
+            function inputAngka(angkaTombol) {
+                if( kalkulator.angka === '0' ) {
+                    kalkulator.angka = angkaTombol;
+                } else {
+                    kalkulator.angka += angkaTombol;
+                }
+            }
 
 
+            inputAngka(19);
+            updateLayar();
+            console.log(kalkulator);
+        });
+    </script>
 </body>
 </html>
