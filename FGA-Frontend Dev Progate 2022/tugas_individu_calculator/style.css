@@ -2,13 +2,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body {
+    background-color: rgb(124, 124, 122);
 }
 
 
 /* header */
 .header {
     text-align: center;
-    margin: 30px auto 50px;
+    padding: 30px;
+    margin-bottom: 30px;
+    color: whitesmoke;
 }
 
 
@@ -17,40 +24,52 @@
 .container {
     display: flex;
 }
-.layout-kalkulator, .tombol-row, .tombol, .container {
+.layout-kalkulator, .tombol {
     border: 1px solid black;
 }
 .layout-kalkulator {
     width: 400px;
-    height: 480px;
+    height: 475px;
     font-size: 30px;
-    background-color: aqua;
     margin: 0px 50px 0px auto;
 }
 .layout-kalkulator .layar {
-    height: 85px;
+    height: 90px;
     font-size: 50px;
     padding-top: 15px;
     text-align: center;
+    background-color: rgb(83, 83, 80);
+}
+.layout-kalkulator .layar .hasil {
+    color: whitesmoke;
+    background-color: rgb(83, 83, 80);
 }
 .tombol-row {
     display: flex;
     text-align: center;
+    
 }
 .tombol {
     padding: 30px;
     width: 25%;
+    color: whitesmoke;
+    background-color: rgb(48, 48, 46);
 }
 .samadengan {
     width: 50%;
 }
 .tombol:hover {
-    background-color: brown;
+    background-color: rgb(83, 83, 80);
 }
 
 .history {
     margin: 0px auto 0px 50px;
-    width: 400px;
+    width: 450px;
+    color: whitesmoke;
+    background-color: rgb(48, 48, 46);
+}
+.history th {
+    padding: 10px;
 }
 
 
@@ -58,14 +77,35 @@
 /* footer */
 .footer {
     display: flex;
-    background-color: rgb(148, 139, 128);
-    padding: 30px 80px;
+    padding: 30px 150px;
+    color: white;
+    margin-top: 50px;
 }
 .footer .judul {
     width: 50%;
     line-height: 30px;
 }
+.footer .judul h5 {
+    font-size: 20px;
+    font-weight: 100;
+}
+.footer .judul h2 {
+    margin-bottom: 10px;
+}
 .footer .sosmed {
     width: 50%;
-    line-height: 25px;
+    line-height: 28px;
+}
+.footer .sosmed h3 {
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.footer .sosmed a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer .sosmed p:hover {
+    font-size: 1.1em;
 }
