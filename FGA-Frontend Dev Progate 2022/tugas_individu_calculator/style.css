@@ -1,9 +1,19 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header */
+.header {
+    text-align: center;
+    margin: 30px auto 50px;
 }
 
 
 
+/* isi */
 .container {
     display: flex;
 }
@@ -14,16 +24,18 @@
     width: 400px;
     height: 480px;
     font-size: 30px;
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: aqua;
+    margin: 0px 50px 0px auto;
 }
 .layout-kalkulator .layar {
     height: 85px;
     font-size: 50px;
     padding-top: 15px;
+    text-align: center;
 }
 .tombol-row {
     display: flex;
+    text-align: center;
 }
 .tombol {
     padding: 30px;
@@ -36,8 +48,24 @@
     background-color: brown;
 }
 
+.history {
+    margin: 0px auto 0px 50px;
+    width: 400px;
+}
 
 
+
+/* footer */
 .footer {
     display: flex;
+    background-color: rgb(148, 139, 128);
+    padding: 30px 80px;
+}
+.footer .judul {
+    width: 50%;
+    line-height: 30px;
+}
+.footer .sosmed {
+    width: 50%;
+    line-height: 25px;
 }
