@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    display: flex;
+}
+.layout-kalkulator, .tombol-row, .tombol, .container {
+    border: 1px solid black;
+}
+.layout-kalkulator {
+    width: 400px;
+    height: 480px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.layout-kalkulator .layar {
+    height: 85px;
+    font-size: 50px;
+    padding-top: 15px;
+}
+.tombol-row {
+    display: flex;
+}
+.tombol {
+    padding: 30px;
+    width: 25%;
+}
+.samadengan {
+    width: 50%;
+}
+.tombol:hover {
+    background-color: brown;
+}
+
+
+
+.footer {
+    display: flex;
+}
