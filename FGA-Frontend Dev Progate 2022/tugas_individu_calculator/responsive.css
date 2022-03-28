@@ -1,37 +1,203 @@
 /* > 1300 */
 @media (min-width: 1301px) {
+    /* header */
+    .header h1 {
+        font-size: 30px;
+    }
+
     /* isi */
+    .container {
+        display: flex;
+        height: 600px;
+    }
     .layout-kalkulator {
         margin: 50px 50px 80px auto;
+        width: 500px;
+        height: 475px;
+        font-size: 30px;
+    }
+    .tombol {
+        padding: 30px;
     }
     .history {
         margin: 50px auto 80px 50px;
+        width: 500px;
+        height: 475px;
     }
 
     /* footer */
     .footer {
+        display: flex;
         padding: 30px 200px;
     }
+    .footer .judul marquee {
+        margin: 0px 100px 0px 0px;
+    }
+    .footer .judul {
+        width: 45%;
+        line-height: 30px;
+    }
+    .footer .sosmed {
+        width: 15%;
+        line-height: 28px;
+    }
+    .footer .alat {
+        width: 40%;
+    }
+
 
 }
 
 
 
-
-
-
-/* < 1300 */
+/* 1001 - 1300 */
 @media (max-width: 1300px) {
+    /* header */
+    .header h1 {
+        font-size: 30px;
+    }
+
     /* isi */
+    .container {
+        display: flex;
+        height: 600px;
+    }
     .layout-kalkulator {
         margin: 50px 10px 80px auto;
+        width: 500px;
+        height: 475px;
+        font-size: 30px;
+    }
+    .tombol {
+        padding: 30px;
     }
     .history {
         margin: 50px auto 80px 10px;
+        width: 500px;
+        height: 475px;
     }
     
     /* footer */
     .footer {
+        display: flex;
         padding: 30px 80px;
+    }
+    .footer .judul marquee {
+        margin: 0px 100px 0px 0px;
+    }
+    .footer .judul {
+        width: 45%;
+        line-height: 30px;
+    }
+    .footer .sosmed {
+        width: 15%;
+        line-height: 28px;
+    }
+    .footer .alat {
+        width: 40%;
+    }
+}
+
+
+
+/* 641 - 1000 */
+@media (max-width: 1000px) {
+    /* header */
+    .header h1 {
+        font-size: 27px;
+    }
+
+    /* isi */
+    .container {
+        display: block;
+        height: 1100px;
+    }
+    .layout-kalkulator {
+        margin: 50px auto;
+        width: 500px;
+        height: 475px;
+        font-size: 30px;
+    }
+    .tombol {
+        padding: 30px;
+    }
+    .history {
+        margin: 50px auto;
+        width: 500px;
+        height: 475px;
+    }
+
+    /* footer */
+    .footer {
+        display: block;
+        padding: 30px 120px;
+    }
+    .footer .judul marquee {
+        margin: 0px;
+    }
+    .footer .judul {
+        width: 100%;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .footer .sosmed {
+        width: 100%;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .footer .alat {
+        width: 100%;
+    }
+}
+
+
+
+/* 640 */
+/* header */
+@media (max-width: 640px) {
+    .header h1 {
+        font-size: 22px;
+    }
+    
+    /* isi */
+    .container {
+        display: block;
+        height: 870px;
+    }
+    .layout-kalkulator {
+        margin: 50px auto;
+        width: 400px;
+        height: 375px;
+        font-size: 25px;
+    }
+    .tombol {
+        padding: 20px;
+    }
+    .history {
+        margin: 50px auto;
+        width: 400px;
+        height: 375px;
+    }
+    
+    /* footer */
+    .footer {
+        display: block;
+        padding: 30px 80px;
+    }
+    .footer .judul marquee {
+        margin: 0px;
+    }
+    .footer .judul {
+        width: 100%;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .footer .sosmed {
+        width: 100%;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .footer .alat {
+        width: 100%;
     }
 }
