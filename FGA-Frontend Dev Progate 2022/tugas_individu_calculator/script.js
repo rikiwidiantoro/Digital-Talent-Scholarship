@@ -57,8 +57,12 @@ $(document).ready(function() {
         let hasil = 0;
         if( kalkulator.operator === "+" ) {
             hasil = parseInt(kalkulator.angkaPertama) + parseInt(kalkulator.angka);
-        } else {
+        } else if( kalkulator.operator === "-" ) {
             hasil = parseInt(kalkulator.angkaPertama) - parseInt(kalkulator.angka);
+        } else if( kalkulator.operator === "*" ) {
+            hasil = parseInt(kalkulator.angkaPertama) * parseInt(kalkulator.angka);
+        } else if( kalkulator.operator === "/" ) {
+            hasil = parseInt(kalkulator.angkaPertama) / parseInt(kalkulator.angka);
         }
         kalkulator.angka = hasil;
     }
