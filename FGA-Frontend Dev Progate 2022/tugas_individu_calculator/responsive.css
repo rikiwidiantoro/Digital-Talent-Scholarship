@@ -1,0 +1,37 @@
+/* > 1300 */
+@media (min-width: 1301px) {
+    /* isi */
+    .layout-kalkulator {
+        margin: 50px 50px 80px auto;
+    }
+    .history {
+        margin: 50px auto 80px 50px;
+    }
+
+    /* footer */
+    .footer {
+        padding: 30px 200px;
+    }
+
+}
+
+
+
+
+
+
+/* < 1300 */
+@media (max-width: 1300px) {
+    /* isi */
+    .layout-kalkulator {
+        margin: 50px 10px 80px auto;
+    }
+    .history {
+        margin: 50px auto 80px 10px;
+    }
+    
+    /* footer */
+    .footer {
+        padding: 30px 80px;
+    }
+}
