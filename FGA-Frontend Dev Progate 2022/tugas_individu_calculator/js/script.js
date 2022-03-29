@@ -1,4 +1,4 @@
-$(document).ready(function() {
+// $(document).ready(function() {
     // membuat variabel
     const kalkulator = {
         angka: '0',
@@ -49,7 +49,7 @@ $(document).ready(function() {
     }
 
     function samadengan() {
-        if( kalkulator.angkaPertama == null || kalkulator.angkaKedua == null ) {
+        if( kalkulator.angkaPertama == null || kalkulator.operator == null ) {
             alert("Anda belum menetapkan operator");
             return;
         }
@@ -64,7 +64,19 @@ $(document).ready(function() {
         } else if( kalkulator.operator === "/" ) {
             hasil = parseInt(kalkulator.angkaPertama) / parseInt(kalkulator.angka);
         }
+
+        // membuat object history
+        const history = {
+            angkaPertama: kalkulator.angkaPertama,
+            angkaKedua: kalkulator.angka,
+            operator: kalkulator.operator,
+            hasil: hasil
+        }
+        ambilHistory(history);
+
         kalkulator.angka = hasil;
+
+        renderHistory();
     }
 
 
@@ -113,4 +125,4 @@ $(document).ready(function() {
     // updateLayar();
     // inputAngka();
     // console.log(kalkulator);
-});
+// });
