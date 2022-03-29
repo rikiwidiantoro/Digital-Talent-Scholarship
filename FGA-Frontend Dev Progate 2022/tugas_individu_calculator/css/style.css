@@ -75,6 +75,11 @@ body {
 .history th {
     padding: 10px;
 }
+#historyList td {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
 
 
 
@@ -132,6 +137,13 @@ hr {
 }
 .footer .alat p {
     /* font-size: 15px; */
-    margin-top: 15px;
+    margin: 15px auto;
     text-align: justify;
+}
+.footer .alat a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer .alat span:hover {
+    font-size: 1.1em;
 }

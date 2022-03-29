@@ -8,12 +8,12 @@
     /* isi */
     .container {
         display: flex;
-        height: 600px;
+        /* height: 600px; */
     }
     .layout-kalkulator {
         margin: 50px 50px 80px auto;
         width: 500px;
-        height: 475px;
+        /* height: 475px; */
         font-size: 30px;
     }
     .tombol {
@@ -22,7 +22,7 @@
     .history {
         margin: 50px auto 80px 50px;
         width: 500px;
-        height: 475px;
+        /* height: 475px; */
         font-size: 17px;
     }
 
@@ -79,12 +79,12 @@
     /* isi */
     .container {
         display: flex;
-        height: 600px;
+        /* height: 600px; */
     }
     .layout-kalkulator {
         margin: 50px 10px 80px auto;
         width: 500px;
-        height: 475px;
+        /* height: 475px; */
         font-size: 30px;
     }
     .tombol {
@@ -93,7 +93,7 @@
     .history {
         margin: 50px auto 80px 10px;
         width: 500px;
-        height: 475px;
+        /* height: 475px; */
         font-size: 17px;
     }
     
@@ -148,12 +148,12 @@
     /* isi */
     .container {
         display: block;
-        height: 1100px;
+        /* height: 1100px; */
     }
     .layout-kalkulator {
         margin: 50px auto;
         width: 500px;
-        height: 475px;
+        /* height: 475px; */
         font-size: 30px;
     }
     .tombol {
@@ -162,7 +162,7 @@
     .history {
         margin: 50px auto;
         width: 500px;
-        height: 475px;
+        /* height: 475px; */
         font-size: 16px;
     }
 
@@ -219,12 +219,12 @@
     /* isi */
     .container {
         display: block;
-        height: 870px;
+        /* height: 870px; */
     }
     .layout-kalkulator {
         margin: 50px auto;
         width: 400px;
-        height: 375px;
+        /* height: 375px; */
         font-size: 25px;
     }
     .tombol {
@@ -233,7 +233,7 @@
     .history {
         margin: 50px auto;
         width: 400px;
-        height: 375px;
+        /* height: 375px; */
         font-size: 14px;
     }
     
@@ -289,12 +289,12 @@
     /* isi */
     .container {
         display: block;
-        height: 780px;
+        /* height: 780px; */
     }
     .layout-kalkulator {
         margin: 40px auto;
         width: 300px;
-        height: 335px;
+        /* height: 335px; */
         font-size: 21px;
     }
     .tombol {
@@ -303,7 +303,7 @@
     .history {
         margin: 40px auto;
         width: 300px;
-        height: 365px;
+        /* height: 365px; */
         font-size: 11px;
     }
     
