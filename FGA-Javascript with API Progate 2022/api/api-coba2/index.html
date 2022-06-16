@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coba api 2</title>
+</head>
+<body>
+    <h1>COBA API 2</h1>
+
+    <button type="button" onclick="klik()">klik tombol</button>
+
+    <div id="coba"></div>
+
+    <script>
+        function klik() {
+            const xhttp = new XMLHttpRequest();
+            const url = "https://dev.farizdotid.com/api/daerahindonesia/provinsi";
+            // const url = "https:/pokeapi.co/api/v2/pokemon?limit=10";
+            const httpMethod = "GET";
+
+            xhttp.open(httpMethod, url);
+            xhttp.send();
+
+            xhttp.onreadystatechange = function(e) {
+                if(this.readyState == 4 && this.status == 200) {
+                    // console.log(this.responseText);
+
+                    const respon = JSON.parse(this.responseText);
+                    // console.log(respon);
+
+                    var result = Object.entries(respon);
+
+                    // console.log(result);
+                    let data = "";
+                    for(let i = 0; i < result.length; i++) {
+                        data = result[i][1];
+                        // console.log(data);
+                        
+                        // let d = "";
+                        // for(let j = 0; j < data.length; j++) {
+                        //     // d = data[j].nama;
+                        //     d = d + `<p>${data[j].nama}</p>`;
+                        //     document.getElementById('coba').innerHTML = d;
+                        // }
+                        // console.log(d);
+
+                        dd = "";
+                        data.map((dat) => {
+                            dd = dd + `<p>${dat.nama}</p>`;
+                            // console.log(dd);
+                            document.getElementById('coba').innerHTML = dd;
+                        });
+
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
