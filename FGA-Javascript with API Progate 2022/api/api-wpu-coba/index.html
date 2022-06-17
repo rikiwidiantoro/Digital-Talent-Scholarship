@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+</head>
+<body>
+    <h1>coba api wpu</h1>
+
+    <table id="tabel" class="display" width="100%">
+        <thead>
+            <tr>
+                <th>Nomor</th>
+                <th>Nama</th>
+                <th>Manajer Investasi</th>
+                <th>Bank Kustodian</th>
+                <th>Jenis Alokasi</th>
+            </tr>
+        </thead>
+        <tbody id="datass">
+
+        </tbody>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready( function () {
+            // $('#tabel').DataTable();
+        
+            // let xhr = new XMLHttpRequest();
+
+            // xhr.onreadystatechange = function() {
+            //     if( xhr.readyState == 4 && xhr.status == 200 ) {
+            //         let data = this.responseText;
+            //         let hasil = JSON.parse(data);
+
+            //         let parameter = hasil.data.products;
+                    
+            //         let tabel = document.getElementById('datass');
+                    
+            //         for(let i = 0; i < parameter.length; i++) {
+            //             // console.log(parameter[i]);
+            //             tabel.innerHTML += `<tr>
+            //                     <td>${parameter[i].id}</td>
+            //                     <td>${parameter[i].name}</td>
+            //                     <td>${parameter[i].management}</td>
+            //                     <td>${parameter[i].custodian}</td>
+            //                     <td>${parameter[i].type}</td>
+            //                 </tr>`;
+
+            //             // div.innerHTML += parameter[i].name;
+            //         }
+            //     }
+            // }
+
+            // xhr.open('GET', 'https://ojk-invest-api.vercel.app/api/products?limit=5', true);
+            // xhr.send();
+
+            $.getJSON('https://ojk-invest-api.vercel.app/api/products?limit=100', function(data) {
+                // console.log(data);
+
+                // let data = this.responseText;
+                // let hasil = JSON.parse(data);
+
+                let parameter = data.data.products;
+                
+                let tabel = document.getElementById('datass');
+                
+                for(let i = 0; i < parameter.length; i++) {
+                    // console.log(parameter[i]);
+                    tabel.innerHTML += `<tr>
+                            <td>${parameter[i].id}</td>
+                            <td>${parameter[i].name}</td>
+                            <td>${parameter[i].management}</td>
+                            <td>${parameter[i].custodian}</td>
+                            <td>${parameter[i].type}</td>
+                        </tr>`;
+
+                    // div.innerHTML += parameter[i].name;
+                }
+                $('#tabel').DataTable();
+            });
+
+            
+        } );
+    </script>
+</body>
+</html>
