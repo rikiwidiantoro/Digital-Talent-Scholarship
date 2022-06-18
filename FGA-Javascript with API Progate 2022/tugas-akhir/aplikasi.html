@@ -53,10 +53,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item mx-5">
-                            <a class="nav-link active" href="index.html">Produk Investasi</a>
+                            <a class="nav-link" href="index.html">Produk Investasi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="aplikasi.html">Aplikasi Investasi</a>
+                            <a class="nav-link active" href="aplikasi.html">Aplikasi Investasi</a>
                         </li>
                         
                     </ul>
@@ -74,27 +74,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>Produk Investasi di Indonesia</h2>
+                        <h2>Aplikasi Investasi di Indonesia</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p>Data produk investasi yang diawasi oleh Otoritas Jaksa Keuangan Republik Indonesia</p>
-                        <p>public api : <a href="https://ojk-invest-api.vercel.app/api/products" target="_blank">https://ojk-invest-api.vercel.app/api/products</a></p>
+                        <p>Data platfom atau aplikasi investasi yang legal dan diawasi oleh Otoritas Jaksa Keuangan Republik Indonesia</p>
+                        <p>public api : <a href="https://ojk-invest-api.vercel.app/api/apps" target="_blank">https://ojk-invest-api.vercel.app/api/apps</a></p>
                     </div>
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="alert alert-dark alert-dismissible fade show" role="alert">
                             <strong>Catatan!</strong> Data yang di tampilkan memiliki limit 200 data dikarenakan memerlukan waktu loading lama jika ditampilkan lebih banyak.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <!-- pengantar -->
 
         <!-- isi -->
-        <div class="isi mt-3">
+        <!-- <div class="isi mt-3">
             <div class="container">
                 <table id="tabel" class="display" width="100%">
                     <thead>
@@ -111,15 +111,15 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </div> -->
         <!-- isi -->
 
         <!-- footer -->
-        <footer class="footer mt-5 py-4 p-5 bg-dark bg-gradient text-white">
+        <footer class="footer mt-5 py-4 p-4 bg-dark bg-gradient text-white">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-9">
-                        <h6>&copy; 2022 Tugas Akhir Bootcamp Javascript with API - Progate x Kominfo - Digitalent Scholacship FGA Batch 2</h6>
+                        <p>&copy; 2022 Tugas Akhir Bootcamp Javascript with API - Progate x Kominfo - Digitalent Scholacship FGA Batch 2</p>
                     </div>
                     <div class="col-sm-3">
                         <h5 class="mb-4">Kontak Developer :</h5>
@@ -154,7 +154,7 @@
         <!-- library data tables -->
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
 
-        <script>
+        <!-- <script>
             $(document).ready( function () {
                 $.getJSON('https://ojk-invest-api.vercel.app/api/products?limit=200', function(data) {
                     // console.log(data);
@@ -181,6 +181,6 @@
                     $('#tabel').DataTable();
                 });
             });
-        </script>
+        </script> -->
     </body>
 </html>
