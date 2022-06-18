@@ -94,16 +94,15 @@
         <!-- pengantar -->
 
         <!-- isi -->
-        <!-- <div class="isi mt-3">
+        <div class="isi mt-3">
             <div class="container">
                 <table id="tabel" class="display" width="100%">
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Nama Produk Investasi</th>
-                            <th>Manajer Investasi</th>
-                            <th style="width:150px;">Jenis Alokasi Aset</th>
-                            <th>Bank Kustodian</th>
+                            <th style="width:200px;">Nama Aplikasi</th>
+                            <th>URL</th>
+                            <th style="width:300px;">Owner</th>
                         </tr>
                     </thead>
                     <tbody id="datass">
@@ -111,15 +110,16 @@
                     </tbody>
                 </table>
             </div>
-        </div> -->
+        </div>
         <!-- isi -->
 
         <!-- footer -->
-        <footer class="footer mt-5 py-4 p-4 bg-dark bg-gradient text-white">
+        <footer class="footer mt-5 py-4 p-5 bg-dark bg-gradient text-white">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-9">
-                        <p>&copy; 2022 Tugas Akhir Bootcamp Javascript with API - Progate x Kominfo - Digitalent Scholacship FGA Batch 2</p>
+                        <h6 class="mb-3">&copy; 2022 Tugas Akhir Bootcamp Javascript with API - Progate x Kominfo - Digitalent Scholacship FGA Batch 2</h6>
+                        <p>dibuat oleh Riki Widiantoro - Ponorogo</p>
                     </div>
                     <div class="col-sm-3">
                         <h5 class="mb-4">Kontak Developer :</h5>
@@ -154,15 +154,15 @@
         <!-- library data tables -->
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
 
-        <!-- <script>
+        <script>
             $(document).ready( function () {
-                $.getJSON('https://ojk-invest-api.vercel.app/api/products?limit=200', function(data) {
-                    // console.log(data);
+                $.getJSON('https://ojk-invest-api.vercel.app/api/apps', function(data) {
+                    // console.log(data.data.apps);
 
                     // let data = this.responseText;
                     // let hasil = JSON.parse(data);
-
-                    let parameter = data.data.products;
+                    // console.log(hasil);
+                    let parameter = data.data.apps;
                     
                     let tabel = document.getElementById('datass');
                     
@@ -171,9 +171,8 @@
                         tabel.innerHTML += `<tr>
                                 <td>${parameter[i].id}</td>
                                 <td>${parameter[i].name}</td>
-                                <td>${parameter[i].management}</td>
-                                <td>${parameter[i].type}</td>
-                                <td>${parameter[i].custodian}</td>
+                                <td><a href='${parameter[i].url}' target='_blank'>${parameter[i].url}</a></td>
+                                <td>${parameter[i].owner}</td>
                             </tr>`;
 
                         // div.innerHTML += parameter[i].name;
@@ -181,6 +180,6 @@
                     $('#tabel').DataTable();
                 });
             });
-        </script> -->
+        </script>
     </body>
 </html>
